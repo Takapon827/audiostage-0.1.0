@@ -1,24 +1,26 @@
 # AudioStageMod
 
 Minecraft 1.21.4 (Fabric) 用の舞台音響シミュレーター Mod です。
-Yamaha CL5 デジタルミキサーや Rio ステージボックス、Meyer Sound のスピーカー群、
+Yamaha CL5 デジタルミキサーの機能を模倣し、 Rio ステージボックス、Meyer Sound のスピーカー群、
 Galileo プロセッサーなどをゲーム内のブロック＋GUIとして再現し、
 実際の舞台音響システムさながらの配線・パッチ・操作を体験できます。
+音響システムの学習用途としてお使いください。
+
+追加機能要望、バグ報告などはこちらにご連絡ください nakanotakayoshi0827@icloud.com / X(Twitter) @dddTakapon
 
 ## 主な機能
 
-- **CL5 コンソール**：CHストリップ（フェーダー/ON/メーター）、SEL CH（EQ・ダイナミクス・ゲイン・ファンタム電源）、
+- **YAMAHA CLシリーズ  コンソール**：CHストリップ（フェーダー/ON/メーター）、SEL CH（EQ・ダイナミクス・ゲイン・ファンタム電源）、
   SCENE（300シーンの STORE/RECALL/UNDO）、PATCH（自動パッチ機能付き）、MONITOR（オシレーター/モニター出力）
 - **Rio ステージボックス**：IN/OUTのゲイン・+48V・パッチ・ミュート操作
 - **MultiBox**：チャンネルごとの IN/OUT 方向切り替え、Rioとの自動接続検出
 - **Galileo プロセッサー**：8ch の DELAY / 3バンドEQ / LEVEL / MUTE、出力パッチ、プリセット保存
-- **スピーカー（CQ-1 / PSW-2 / UPJ-1P / UPM）**：LEVEL / MUTE / POWER 操作と、配線に応じた実距離(最大300ブロック)でのサウンド再生
+- **スピーカー meyer sound 社（CQ-1 / PSW-2 / UPJ-1P / UPM）**：LEVEL / MUTE / POWER 操作と、配線に応じた実距離(最大300ブロック)でのサウンド再生
 - **Hub（Luminex GigaSwitch）/ RME Digiface（Dante録音）**：ネットワーク配線状況の表示
 - **ケーブルシステム**：XLR / マルチピン / Dante(CAT6) などケーブル種別ごとに接続可否を判定し、
   実際の配線を辿って信号経路（SignalFlow）を構築
 - `/audiostage connect` `/audiostage disconnect` `/audiostage list` などのコマンド群
 
-OSC連携は廃止し、すべてゲーム内の右クリックGUI操作で完結します。
 
 ## 動作環境
 
@@ -33,7 +35,7 @@ OSC連携は廃止し、すべてゲーム内の右クリックGUI操作で完�
 
 ## スクリーンショット
 
-| CL5 メイン画面 |  CL5 GUI |
+| CL5 外観 |  CL5 GUI |
 | --- | --- |
 | ![main](screenshots/MAIN.png) | ![cl5_1](screenshots/CL_GUI_1.png) |
 
@@ -46,7 +48,7 @@ OSC連携は廃止し、すべてゲーム内の右クリックGUI操作で完�
 | --- | --- |
 | ![rio](screenshots/rio_gui.png) | ![multibox](screenshots/multibox_gui.png) |
 
-| MultiBox - Rio 接続 | スピーカー (CQ) |
+| MultiBox - Rio 接続 | スピーカー | MultiBox - Rio 接続 |(画像はPSW/上部はCQ下部はPSW) |
 | --- | --- |
 | ![multibox_rio](screenshots/multibox_rio.png) | ![cq](screenshots/CQ.png) |
 
