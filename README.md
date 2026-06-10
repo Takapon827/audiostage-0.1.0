@@ -30,7 +30,7 @@ Galileo プロセッサーなどをゲーム内のブロック＋GUIとして再
 
 ## インストール
 
-1. [release/audiostage-0.1.0.jar](release/audiostage-0.1.0.jar) を `mods` フォルダに配置
+1. [audiostage-0.1.0.jar](audiostage-0.1.0.jar) を `mods` フォルダに配置
 2. Fabric Loader / Fabric API を導入したクライアント・サーバーで起動
 
 ## スクリーンショット
